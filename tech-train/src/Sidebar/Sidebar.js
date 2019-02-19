@@ -15,6 +15,7 @@ class Sidebar extends Component {
     }
     handleClick = event => {
         this.setState({topic:event.currentTarget.value});
+        
        }
 
     render() {
