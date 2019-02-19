@@ -1,0 +1,41 @@
+
+.sidebar-list {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 20%;
+    height: 100%;
+    background-color: #f1f1f1;
+    position: fixed;
+    overflow: auto;
+
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.menu-item {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.topic {
+    display: block;
+    padding: 8px 16px;
+    color: #000;
+    text-decoration: none;
+}
+
+.active {
+    display: block;
+    padding: 8px 16px;
+    color: white;
+    background-color: pink;
+}
