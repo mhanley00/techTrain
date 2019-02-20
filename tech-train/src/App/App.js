@@ -4,6 +4,8 @@ import Main from '../Main/Main';
 
 class App extends Component {
   //MOVE STATE HERE, GIVE TO COMPONENTS AS PROPS
+
+  
   render() {
     return (
       <div className="App">
