@@ -6,11 +6,11 @@ const config = {
     subjects: [
         {
             label: 'ES6',
-            info: <div>ES6 is a new version of JavaScript. We use it a lot in React</div>
+            info: 'ES6 is a new version of JavaScript. We use it a lot in React'
         },
         {
             label: 'ReactJS',
-            info: <div>React is a front-end JavaScript framework developed by Facebook</div>
+            info: 'React is a front-end JavaScript framework developed by Facebook'
         },
         {
             label: 'Redux',
