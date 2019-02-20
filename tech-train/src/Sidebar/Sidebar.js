@@ -26,14 +26,14 @@ class Sidebar extends Component {
     render() {
 
         return (
-            <div className='sidebar'> {/*will add 'hidden' class to close on hover*/}
+            <div className='sidebar'>
             <ul className='sidebar-list'> 
                 <li className={`menu-item ${this.state.activeTopic === 'ES6' ? 'active' : ''}`}><div id='ES6' onClick={this.handleClick}>ES6</div></li>
-                {/* <li className='menu-item'><div id='ReactJS' onClick={this.handleClick}>ReactJS</div></li>
-                <li className='menu-item'><div className={className} id='Redux' onClick={this.handleClick}>Redux</div></li>
-                <li className='menu-item'><div className={className} id='CSS' onClick={this.handleClick}>CSS</div></li>
-                <li className='menu-item'><div className={className} id='Esri JS API' onClick={this.handleClick}>Esri JS API</div></li>
-                <li className='menu-item'><div className={className} id='Node.js' onClick={this.handleClick}>Node.js</div></li> */}
+                <li className={`menu-item ${this.state.activeTopic === 'ReactJS' ? 'active' : ''}`}><div id='ReactJS' onClick={this.handleClick}>ReactJS</div></li>
+                <li className={`menu-item ${this.state.activeTopic === 'Redux' ? 'active' : ''}`}><div id='Redux' onClick={this.handleClick}>Redux</div></li>
+                <li className={`menu-item ${this.state.activeTopic === 'CSS' ? 'active' : ''}`}><div id='CSS' onClick={this.handleClick}>CSS</div></li>
+                <li className={`menu-item ${this.state.activeTopic === 'EsriJSAPI' ? 'active' : ''}`}><div id='EsriJSAPI' onClick={this.handleClick}>Esri JS API</div></li>
+                <li className={`menu-item ${this.state.activeTopic === 'Node.js' ? 'active' : ''}`}><div id='Node.js' onClick={this.handleClick}>Node.js</div></li>
                 
             </ul>
             </div>

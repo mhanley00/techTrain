@@ -2,31 +2,25 @@
 .sidebar {
     float: left;
     height: 100vh;
-    -webkit-transition: width .5s;
-    transition-timing-function: ease-in-out;
-    transition: width .5s;
-    
 }
-.sidebar:hover{
-    width: 500px;
-}
-
-/* toggle sidebar div visability
-.hidden { 
-    width: 8px;
-} */
 
 /*SIDEBAR CONTENT <ul>*/
 .sidebar-list {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
-    width: 20%;
-    height: 100%;
+    width: 8px;
+    height: 100vh;
     background-color: #f1f1f1;
     position: fixed;
     overflow: auto;
+    -webkit-transition: width .5s;
+    transition-timing-function: ease-in-out;
+    transition: width .5s;
 
+}
+.sidebar-list:hover{
+    width: 20%;
 }
 
 
@@ -34,7 +28,7 @@
 .menu-item {
     display: block;
     margin: 0;
-    padding: 0;
+    padding: 8px 16px;
 }
 
 .topic {
