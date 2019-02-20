@@ -7,30 +7,30 @@ class Sidebar extends Component {
     constructor(props){
         super(props)
         this.state = {
-            topic: 'dogs',
-            collapsed: false
+            activeTopic: 'dogs', //this will control sidebar css + what shows in main container
+            collapsed: true, //this will control entire sidebar (css) width OR x index
+
         }
-    
-        // this.selectTopic = this.selectTopic.bind(this);
     }
+    // let className = 'topic';
+    // console.log(topic);
     handleClick = event => {
         const topic = event.target.id;
-        console.log(topic);
-
-        this.setState({topic:topic});
+        //add className active to clicked item
+        this.setState({activeTopic:topic});
 
        }
 
     render() {
         return (
-            <div>
-            <ul className='sidebar-list'>
-                <li className='menu-item'><div className='topic' id='ES6' onClick={this.handleClick}>ES6</div></li>
-                <li className='menu-item'><div className='topic' id='ReactJS' onClick={this.handleClick}>ReactJS</div></li>
-                <li className='menu-item'><div className='topic' id='Redux' onClick={this.handleClick}>Redux</div></li>
-                <li className='menu-item'><div className='topic' id='CSS' onClick={this.handleClick}>CSS</div></li>
-                <li className='menu-item'><div className='topic' id='Esri JS API' onClick={this.handleClick}>Esri JS API</div></li>
-                <li className='menu-item'><div className='topic' id='Node.js' onClick={this.handleClick}>Node.js</div></li>
+            <div> {/*will add 'hidden' class to close on hover*/}
+            <ul className='sidebar-list'> 
+                <li className='menu-item'><div className={this.className} id='ES6' onClick={this.handleClick}>ES6</div></li>
+                {/* <li className='menu-item'><div className={className} id='ReactJS' onClick={this.handleClick}>ReactJS</div></li>
+                <li className='menu-item'><div className={className} id='Redux' onClick={this.handleClick}>Redux</div></li>
+                <li className='menu-item'><div className={className} id='CSS' onClick={this.handleClick}>CSS</div></li>
+                <li className='menu-item'><div className={className} id='Esri JS API' onClick={this.handleClick}>Esri JS API</div></li>
+                <li className='menu-item'><div className={className} id='Node.js' onClick={this.handleClick}>Node.js</div></li> */}
                 
             </ul>
             </div>

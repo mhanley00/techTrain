@@ -11,6 +11,11 @@
 
 }
 
+/*toggle sidebar div visability*/
+.hidden { 
+    width: 8px;
+}
+
 button {
     padding: 0;
     border: none;
