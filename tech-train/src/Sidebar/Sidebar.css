@@ -1,14 +1,20 @@
 /*SIDEBAR DIV*/
-
 .sidebar {
     float: left;
     height: 100vh;
+    -webkit-transition: width .5s;
+    transition-timing-function: ease-in-out;
+    transition: width .5s;
+    
+}
+.sidebar:hover{
+    width: 500px;
 }
 
-/*toggle sidebar div visability*/
+/* toggle sidebar div visability
 .hidden { 
     width: 8px;
-}
+} */
 
 /*SIDEBAR CONTENT <ul>*/
 .sidebar-list {
