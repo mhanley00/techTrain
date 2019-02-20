@@ -23,9 +23,9 @@ class Sidebar extends Component {
 
     render() {
         return (
-            <div> {/*will add 'hidden' class to close on hover*/}
+            <div className='sidebar'> {/*will add 'hidden' class to close on hover*/}
             <ul className='sidebar-list'> 
-                <li className='menu-item'><div className={this.className} id='ES6' onClick={this.handleClick}>ES6</div></li>
+                <li className='menu-item active'><div className={this.className} id='ES6' onClick={this.handleClick}>ES6</div></li>
                 {/* <li className='menu-item'><div className={className} id='ReactJS' onClick={this.handleClick}>ReactJS</div></li>
                 <li className='menu-item'><div className={className} id='Redux' onClick={this.handleClick}>Redux</div></li>
                 <li className='menu-item'><div className={className} id='CSS' onClick={this.handleClick}>CSS</div></li>
