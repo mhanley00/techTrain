@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const config = {
+const config = {
     appTitle: 'Tech Train 💪💻',
 
     subjects: [
@@ -30,3 +30,5 @@ export const config = {
         },
 ]
 }
+
+export default config;

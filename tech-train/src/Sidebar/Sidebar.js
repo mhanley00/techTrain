@@ -1,14 +1,16 @@
 import React from 'react';
 import './Sidebar.css';
-import config from 'config';
+import config from '../config/config';
 
 function Sidebar (props) {
     console.log(props);
-//HOIST TO CONFIG, .map ACROSS
+const techTopics = config.subjects;
     return (
             <div className='sidebar'>
             <ul className='sidebar-list'> 
-            <li className={`menu-item ${props.topic === 'ES6' ? 'active' : ''}`}><div id='ES6' onClick={props.changeTopic} >ES6</div></li>        
+            {techTopics.map(techTopic =>
+            <li className={`menu-item ${props.topic === techTopic.label ? 'active' : ''}`}><div id={techTopic.label} onClick={props.changeTopic} >{techTopic.label}</div></li>        
+                )}
             </ul>
             </div>
 
