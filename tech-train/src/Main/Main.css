@@ -4,3 +4,16 @@
     margin: 50px;
     
 }
+
+.sub-content {
+    /* width: 0;
+    height: 0;
+    border-style: inset;
+	border-left: 125px solid transparent;
+	border-right: 125px solid transparent;
+    border-top: 200px solid pink; */
+    
+    border-color: pink;
+    background-color: #f1f1f1;
+    border-style: solid 10px ;
+}

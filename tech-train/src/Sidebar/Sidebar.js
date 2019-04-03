@@ -1,19 +1,20 @@
 import React from "react";
 import "./Sidebar.css";
-import config from "../config/config";
+import { subjects } from "../config/config";
 
 function Sidebar(props) {
-  const techTopics = config.subjects;
-
   return (
     <div className="sidebar">
       <ul className="sidebar-list">
-        {techTopics.map(techTopic => (
+        {subjects.map(subject => (
           <li
-            className={`menu-item ${props.topic === techTopic.label ? "active" : ""}`}
+            key={subject.label}
+            className={`menu-item ${
+              props.topic === subject.label ? "active" : ""
+            }`}
           >
-            <div id={techTopic.label} onClick={props.changeTopic} key={techTopic.label}>
-              {techTopic.label}
+            <div id={subject.label} onClick={props.changeTopic}>
+              {subject.label}
             </div>
           </li>
         ))}
